@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            Sunay Pendela
+        </div>
+        <nav>
+            <ul class="contents">
+                <li><a href="sunay.html" target="_self">Home</a></li>
+                <li><a href="page1.html" target="contentFrame">Projects</a></li>
+                <li><a href="page2.html" target="contentFrame">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <iframe name="contentFrame" id="contentFrame" frameborder="0" allowfullscreen>
+        <html>
+            <head>
+                <link rel="stylesheet" href="port.css">
+            </head>
+        <div class="main_frame">
+          <div class="photo">
+            <img src="images\profile photo.jpeg" alt="hero image" />
+          </div>
+          <div class="hero_content">
+            <h1>
+              <span class="hi_text">Hi</span> , I am
+              <span class="name_text">Sunay Pendela</span>
+            </h1>
+            <h2><center>
+                CSE Undergraduate
+            </center></h2>
+          </div>
+        </div>
+        </html>
+    </iframe>
+    <script type="text/javascript">
+        var iframe = document.getElementById("contentFrame");
+        iframe.setAttribute("srcdoc", iframe.innerHTML);
+    </script>
+    <footer>
+        <center>copyright &copy; 2024</center>
+    </footer>
+</body>
+</html>
